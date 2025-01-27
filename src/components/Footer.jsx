@@ -1,27 +1,97 @@
-import React from 'react'
-import styles from "../Css/NavFooter.module.css"
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
+// import React from 'react'
+// import styles from "../Css/NavFooter.module.css"
+// import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
+
+// const Footer = () => {
+//   return (
+//     <div className={styles.footer}>
+
+//       <p>Connect with me</p>
+//       <div className={styles.socialLinks}>
+//         <a href="https://www.linkedin.com/in/rohit-singh-rawat-5540171b6/" target="_blank" rel="noopener noreferrer">
+//           <FaLinkedin size={25} />
+//         </a>
+//         <a href="https://github.com/RohitRawat-08" target="_blank" rel="noopener noreferrer">
+//           <FaGithub size={25} />
+//         </a>
+//         <a href="mailto:rsrawat2929@gmail.com">
+//           <FaEnvelope size={25} />
+//         </a>
+//       </div>
+//       <p className={styles.made}>© 2025 made by Rohit</p>
+      
+//     </div>
+//   )
+// }
+
+// export default Footer
+
+
+
+import React from "react";
+import { motion } from "framer-motion";
+import styles from "../Css/NavFooter.module.css";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <motion.div
+      className={styles.footer}
+  
+    >
+      <motion.p
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        Connect with me
+      </motion.p>
 
-      <p>Connect with me</p>
-      <div className={styles.socialLinks}>
-        <a href="https://www.linkedin.com/in/rohit-singh-rawat-5540171b6/" target="_blank" rel="noopener noreferrer">
+      <motion.div
+        className={styles.socialLinks}
+         initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <motion.a
+          href="https://www.linkedin.com/in/rohit-singh-rawat-5540171b6/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2 }}
+          transition={{ duration: 0.3 }}
+        >
           <FaLinkedin size={25} />
-        </a>
-        <a href="https://github.com/RohitRawat-08" target="_blank" rel="noopener noreferrer">
+        </motion.a>
+        <motion.a
+          href="https://github.com/RohitRawat-08"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2 }}
+          transition={{ duration: 0.3 }}
+        >
           <FaGithub size={25} />
-        </a>
-        <a href="mailto:rsrawat2929@gmail.com">
+        </motion.a>
+        <motion.a
+          href="mailto:rsrawat2929@gmail.com"
+          whileHover={{ scale: 1.2 }}
+          transition={{ duration: 0.3 }}
+        >
           <FaEnvelope size={25} />
-        </a>
-      </div>
-      <p className={styles.made}>© 2025 made by Rohit</p>
-      
-    </div>
-  )
-}
+        </motion.a>
+      </motion.div>
 
-export default Footer
+      <motion.p
+        className={styles.made}
+        initial={{ opacity: 0, y: 50 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         viewport={{ once: false, amount: 0.2 }}
+         transition={{ duration: 1 }}
+      >
+        © 2025 made by Rohit
+      </motion.p>
+    </motion.div>
+  );
+};
+
+export default Footer;
