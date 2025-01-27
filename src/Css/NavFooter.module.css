@@ -141,6 +141,11 @@
     .footer {
         padding-left: 10px;
         text-align: center;
+
+        .made{
+            /* border: solid red; */
+            margin-top: 10px;
+        }
     }
 
     .footer .socialLinks {

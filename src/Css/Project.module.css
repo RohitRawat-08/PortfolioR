@@ -6,3 +6,13 @@
     text-align: start;
     row-gap: 25px;
 }
+
+
+@media (max-width: 768px) {
+    .projectLst{
+        margin-top: 70px;
+        justify-content: center;
+    }
+
+
+}
