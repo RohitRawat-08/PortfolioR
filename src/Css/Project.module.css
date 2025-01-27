@@ -1,0 +1,8 @@
+.projectLst{
+    /* border: solid red; */
+    margin: 80px 0px 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    row-gap: 25px;
+}
