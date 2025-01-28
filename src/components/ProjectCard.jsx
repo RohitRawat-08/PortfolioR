@@ -100,7 +100,7 @@ const ProjectCard = (props) => {
           ) : (
             <>
               <span></span>
-              <a href={git_link} target="_blank"><FaGithub size={25} /></a>
+              <a href={git_link} target="_blank" title="Detailed description in README"><FaGithub size={25} /></a>
             </>
           )}
         </motion.div>

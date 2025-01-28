@@ -69,7 +69,7 @@ let assets_data = {
             project_name:"Todo List",
             tech_used:"Django, Python",
             site_link:"",
-            git_link:"https://github.com/RohitRawat-08/ToDo_list_Django",
+            git_link:"https://github.com/RohitRawat-08/Task_Management",
         },
         {
             id:9,
@@ -102,19 +102,19 @@ let assets_data = {
         },
         {
             id:2,
-            image_url:"https://s3.ap-south-1.amazonaws.com/rohit.rawat/images/Netflix.PNG",
-            project_name:"Netflix clone",
-            tech_used:"Html, Css",
-            site_link:"https://s3.ap-south-1.amazonaws.com/rohit.rawat/netflix/index.html",
-            git_link:"https://github.com/RohitRawat-08/HTML-CSS-Projects/tree/master/Netflix",
+            image_url:"https://s3.ap-south-1.amazonaws.com/rohit.rawat/images/ezcart.PNG",
+            project_name:"E-commers platform (ez-Cart)",
+            tech_used:"Django, Python",
+            site_link:"",
+            git_link:"https://github.com/RohitRawat-08/ezCart",
         },
         {
             id:3,
-            image_url:"https://s3.ap-south-1.amazonaws.com/rohit.rawat/images/email.PNG",
-            project_name:"Email Validation",
-            tech_used:"javascript",
-            site_link:"https://s3.ap-south-1.amazonaws.com/rohit.rawat/images/emailvalidation/index.html",
-            git_link:"https://github.com/RohitRawat-08/JavaScript_Projects/tree/master/FirstProject",
+            image_url:"https://s3.ap-south-1.amazonaws.com/rohit.rawat/images/zomato.PNG",
+            project_name:"Zomato Landing Page",
+            tech_used:"Html, Css",
+            site_link:"https://s3.ap-south-1.amazonaws.com/rohit.rawat/zomato/index.html",
+            git_link:"https://github.com/RohitRawat-08/HTML-CSS-Projects/tree/master/zomato",
             
         },
 
